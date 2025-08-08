@@ -4,3 +4,13 @@
 //     -2. Verify the page title. 
 //  - Save as cypress/integration/test_home.js. 
 //  - Run with npx cypress run. Push to GitHub.
+
+describe(' First test as a news website tester.', () => {
+    it('Open website and verify title', () => {
+        cy.visit(URL);
+        cy.title().should('include', 'The Internet');
+        // You can also use cy.title().should('eq', 'The Internet') if you
+        // want to check for an exact match.
+    } )
+
+})
