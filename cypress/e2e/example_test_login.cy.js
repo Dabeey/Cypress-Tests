@@ -16,7 +16,6 @@ describe('SauceDemo Login Test', () => {
         cy.get('.title').should('have.text', 'Products');
     });
 
-
     it('Should show error for invalid credentials', () => {
         cy.visit(baseUrl);
 
